@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Rice",
+        "aminoAcids": [
+            {
+                "name": "Histidin"
+            },
+            {
+                "name": "Isoleucin"
+            },
+            {
+                "name": "Leucin"
+            },
+            {
+                "name": "Lysin"
+            },
+            {
+                "name": "Methionin"
+            },
+            {
+                "name": "Phenylalanin"
+            },
+            {
+                "name": "Threonin"
+            },
+            {
+                "name": "Tryptophan"
+            },
+            {
+                "name": "Valin"
+            }
+        ]
+    }
+]

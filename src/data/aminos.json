@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Histidin",
+        "essential": true
+    },
+    {
+        "name": "Isoleucin",
+        "essential": true
+    },
+    {
+        "name": "Leucin",
+        "essential": true
+    },
+    {
+        "name": "Lysin",
+        "essential": true
+    },
+    {
+        "name": "Methionin",
+        "essential": true
+    },
+    {
+        "name": "Phenylalanin",
+        "essential": true
+    },
+    {
+        "name": "Threonin",
+        "essential": true
+    },
+    {
+        "name": "Tryptophan",
+        "essential": true
+    },
+    {
+        "name": "Valin",
+        "essential": true
+    }
+]
