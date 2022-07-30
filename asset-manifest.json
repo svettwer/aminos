@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/aminos/static/css/main.073c9b0a.css",
-    "main.js": "/aminos/static/js/main.c26511a1.js",
-    "static/js/787.28cb0dcd.chunk.js": "/aminos/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/aminos/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/aminos/static/css/main.1d7d1f13.css",
+    "main.js": "/aminos/static/js/main.76ab0694.js",
+    "static/js/787.c6399e1e.chunk.js": "/aminos/static/js/787.c6399e1e.chunk.js",
     "index.html": "/aminos/index.html",
-    "main.073c9b0a.css.map": "/aminos/static/css/main.073c9b0a.css.map",
-    "main.c26511a1.js.map": "/aminos/static/js/main.c26511a1.js.map",
-    "787.28cb0dcd.chunk.js.map": "/aminos/static/js/787.28cb0dcd.chunk.js.map"
+    "main.1d7d1f13.css.map": "/aminos/static/css/main.1d7d1f13.css.map",
+    "main.76ab0694.js.map": "/aminos/static/js/main.76ab0694.js.map",
+    "787.c6399e1e.chunk.js.map": "/aminos/static/js/787.c6399e1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.c26511a1.js"
+    "static/css/main.1d7d1f13.css",
+    "static/js/main.76ab0694.js"
   ]
 }
