@@ -1,74 +1,83 @@
 [
     {
-        "name": "Rice",
+        "name": "White rice",
         "aminoAcids": [
             {
-                "name": "Histidin"
+                "name": "Histidin",
+                "amountInMilligramPerHundredGram": "150"
             },
             {
-                "name": "Isoleucin"
+                "name": "Isoleucin",
+                "amountInMilligramPerHundredGram": "280"
             },
             {
-                "name": "Leucin"
+                "name": "Leucin",
+                "amountInMilligramPerHundredGram": "540"
             },
             {
-                "name": "Lysin"
+                "name": "Lysin",
+                "amountInMilligramPerHundredGram": "240"
             },
             {
-                "name": "Methionin"
+                "name": "Methionin",
+                "amountInMilligramPerHundredGram": "150"
             },
             {
-                "name": "Phenylalanin"
+                "name": "Phenylalanin",
+                "amountInMilligramPerHundredGram": "350"
             },
             {
-                "name": "Threonin"
+                "name": "Threonin",
+                "amountInMilligramPerHundredGram": "230"
             },
             {
-                "name": "Tryptophan"
+                "name": "Tryptophan",
+                "amountInMilligramPerHundredGram": "75"
             },
             {
-                "name": "Valin"
+                "name": "Valin",
+                "amountInMilligramPerHundredGram": "400"
             }
         ]
     },
     {
-        "name": "Kidney Beans",
+        "name": "Kidney beans",
         "aminoAcids": [
             {
                 "name": "Histidin",
-                "percentage": "92"
+                "amountInMilligramPerHundredGram": "688"
             },
             {
                 "name": "Isoleucin",
-                "percentage": "67"
+                "amountInMilligramPerHundredGram": "1007"
             },
             {
                 "name": "Leucin",
-                "percentage": "63"
+                "amountInMilligramPerHundredGram": "1842"
             },
             {
                 "name": "Lysin",
-                "percentage": "79"
+                "amountInMilligramPerHundredGram": "1768"
             },
             {
                 "name": "Methionin",
-                "percentage": "42"
+                "amountInMilligramPerHundredGram": "340"
             },
             {
                 "name": "Phenylalanin",
-                "percentage": "101"
+                "amountInMilligramPerHundredGram": "1220"
             },
             {
                 "name": "Threonin",
-                "percentage": "87"
+                "amountInMilligramPerHundredGram": "982"
             },
             {
                 "name": "Tryptophan",
-                "percentage": "74"
+                "amountInMilligramPerHundredGram": "221"
             },
             {
                 "name": "Valin",
-                "percentage": "58"
+                "amountInMilligramPerHundredGram": "1130"
             }
         ]
     }
