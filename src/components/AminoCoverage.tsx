@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './../App.css';
-import { AminoTable } from './AminoTable';
+import { AminoTable, CoveredAminoAcids } from './AminoTable';
 import aminoAcids from '../data/aminos.json'
 import knownFood from '../data/food.json'
 import { Food, FoodList } from './FoodList';
@@ -8,10 +8,12 @@ import { Food, FoodList } from './FoodList';
 export function AminoCoverage(){
 
     const [foodList, setFoodList] = useState<Food[]>([]);
-    const [coveredAminoAcids, setCoveredAminoAcids] = useState<String[]>([])
+    const [coveredAminoAcids, setCoveredAminoAcids] = useState<CoveredAminoAcids[]>([])
 
     useEffect(() => {
-        const coveredAminoAcids = foodList.flatMap(food => food.aminoAcids).map(aminoAcid => aminoAcid.name)
+        const coveredAminoAcids = foodList.flatMap(food => food.aminoAcids).map(aminoAcid => {
+            return {name: aminoAcid.name, percentage: 0}}
+            )
         setCoveredAminoAcids(coveredAminoAcids)
       }, [foodList])
 

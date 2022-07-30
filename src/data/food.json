@@ -30,5 +30,46 @@
                 "name": "Valin"
             }
         ]
+    },
+    {
+        "name": "Kidney Beans",
+        "aminoAcids": [
+            {
+                "name": "Histidin",
+                "percentage": "92"
+            },
+            {
+                "name": "Isoleucin",
+                "percentage": "67"
+            },
+            {
+                "name": "Leucin",
+                "percentage": "63"
+            },
+            {
+                "name": "Lysin",
+                "percentage": "79"
+            },
+            {
+                "name": "Methionin",
+                "percentage": "42"
+            },
+            {
+                "name": "Phenylalanin",
+                "percentage": "101"
+            },
+            {
+                "name": "Threonin",
+                "percentage": "87"
+            },
+            {
+                "name": "Tryptophan",
+                "percentage": "74"
+            },
+            {
+                "name": "Valin",
+                "percentage": "58"
+            }
+        ]
     }
 ]
