@@ -1,23 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import './../App.css';
-import { AminoTable, CoveredAminoAcids } from './AminoTable';
+import { AminoTable } from './AminoTable';
 import aminoAcids from '../data/aminos.json'
 import knownFood from '../data/food.json'
-import { Food, FoodList } from './FoodList';
+import { ConsumendFood, Food, FoodList } from './FoodList';
+
+
+export interface ConsumedAminoAcid{
+    name: string,
+    consumedAmount: number
+}
 
 export function AminoCoverage(){
 
-    const [foodList, setFoodList] = useState<Food[]>([]);
-    const [coveredAminoAcids, setCoveredAminoAcids] = useState<CoveredAminoAcids[]>([])
+    const [foodList, setFoodList] = useState<ConsumendFood[]>([]);
+    const [containedAminoAcids, setCoveredAminoAcids] = useState<ConsumedAminoAcid[]>([])
 
     useEffect(() => {
         const coveredAminoAcids = foodList.flatMap(food => food.aminoAcids).map(aminoAcid => {
-            return {name: aminoAcid.name, percentage: 0}}
+            return {name: aminoAcid.name, consumedAmount: 0}}
             )
         setCoveredAminoAcids(coveredAminoAcids)
       }, [foodList])
 
-    function onAddFood(food: Food){
+    function onAddFood(food: ConsumendFood){
         setFoodList([...foodList, food]);
     }
 
@@ -25,9 +31,16 @@ export function AminoCoverage(){
         setFoodList(foodList.filter(food => food !== foodToRemove))
     }
 
+    function calculateContainedAminoAcids() {
+
+
+
+        return []
+    }
+
     return (
         <div className='AminoCoverage'>
-            <AminoTable aminoAcidsToDisplay={aminoAcids} coveredAminoAcids={coveredAminoAcids} />
+            <AminoTable aminoAcidsToDisplay={aminoAcids} containedAminoAcidProfile={calculateContainedAminoAcids()} />
             <br></br>
             <FoodList listOfFood={knownFood} onAddFood={onAddFood} onRemoveFood={onRemoveFood}/>
         </div>

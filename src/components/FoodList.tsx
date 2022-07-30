@@ -3,31 +3,36 @@ import { BsFillTrashFill } from "react-icons/bs";
 import './../App.css';
 
 export interface ContainedAminoAcid{
-    name: String
+    name: string
 }
 
 export interface Food{
-    name: String
+    name: string
     aminoAcids: ContainedAminoAcid[]
 }
 
+export interface ConsumendFood extends Food{
+    amount: number
+}
+
 export interface FoodListProps {
-    onAddFood: (food: Food) => void
+    onAddFood: (food: ConsumendFood) => void
     onRemoveFood: (food: Food) => void
     listOfFood: Food[]
   }
 
 export function FoodList(props: FoodListProps){
 
-    const [inpuValue, setInputValue] =  useState(""); 
-    const [selectedFood, setSelectedFood] = useState<Food[]>([])
+    const [foodValue, setFoodValue] =  useState(""); 
+    const [amountValue, setAmountValue] =  useState(0); 
+    const [selectedFood, setSelectedFood] = useState<ConsumendFood[]>([])
 
     function onAddFood() {
-        const foodToAdd = props.listOfFood.find(food => food.name === inpuValue)
+        const foodToAdd = props.listOfFood.find(food => food.name === foodValue)
         if(foodToAdd){
-            setSelectedFood([...selectedFood, foodToAdd])
-            props.onAddFood(foodToAdd);
-            setInputValue("");
+            setSelectedFood([...selectedFood, {...foodToAdd, amount:amountValue}])
+            props.onAddFood({...foodToAdd, amount:amountValue});
+            setFoodValue("");
         }
     }
 
@@ -40,6 +45,7 @@ export function FoodList(props: FoodListProps){
     const listItems = selectedFood.map(food => 
         <tr key={food.name.toString()}>
             <td>{food.name}</td>
+            <td>{food.amount} gr.</td>
             <td>{<button onClick={() => onRemoveFood(food)}><BsFillTrashFill/></button>}</td>
         </tr>
     );
@@ -47,8 +53,9 @@ export function FoodList(props: FoodListProps){
     return (
         <div>
             <div>
-                <input value={inpuValue} onChange={(e) => {setInputValue(e.target.value)}} list="browsers" />
-                <button onClick={onAddFood}>Add</button>
+                <input value={foodValue} onChange={(e) => {setFoodValue(e.target.value)}} list="browsers" />
+                <input style={{width: "50px"}} value={amountValue} onChange={(e) => {setAmountValue(Number(e.target.value))}}/> gr.
+                <button  style={{marginLeft: "5px"}} onClick={onAddFood}>Add</button>
                 <datalist id="browsers">
                 {props.listOfFood.map(food => <option>{food.name}</option>)}
                 </datalist>
